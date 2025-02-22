@@ -1,2 +1,2 @@
 # PasquiniSenigallia
-Caffee &amp; Wine Bar
+Coffee &amp; Wine Bar
