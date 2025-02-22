@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lascia una Recensione</title>
+    <style>
+        body {
+            background: url('background.jpg') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            font-family: 'Garamond', serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        #message {
+            font-size: 24px;
+            margin-bottom: 20px;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 15px;
+            border-radius: 10px;
+        }
+        #buttons {
+            display: none;
+            flex-direction: column;
+            gap: 15px;
+        }
+        button {
+            background-color: gold;
+            color: black;
+            border: none;
+            padding: 15px 30px;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        button:hover {
+            background-color: darkgoldenrod;
+        }
+    </style>
+    <script>
+        function showButtons() {
+            document.getElementById('message').style.display = 'none';
+            document.getElementById('buttons').style.display = 'flex';
+        }
+        setTimeout(showButtons, 3000);
+    </script>
+</head>
+<body>
+    <img src="logo.png" alt="Logo" width="180"> 
+    <div id="message">Ogni dettaglio conta. Condividi la tua opinione con noi!</div>
+    <div id="buttons">
+        <a href="https://www.google.com/search?client=ms-android-samsung-ss&q=Pasquini+Senigallia+Recensioni" target="_blank"><button>Google Recensioni</button></a>
+        <a href="https://www.tripadvisor.it/UserReviewEdit-g194914-d15244466-Pasquini_Coffee_Wine_Bar-Senigallia_Province_of_Ancona_Marche.html" target="_blank"><button>TripAdvisor</button></a>
+    </div>
+</body>
+</html>
